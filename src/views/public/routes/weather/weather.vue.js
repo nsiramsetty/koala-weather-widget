@@ -80,7 +80,10 @@ export default {
                                 this.settingsEnabled = false;
                                 this.$toastr.s("Weather Data Loaded Successfully.");
                                 // Store responses in firestore for history purpose
-                                this.db.collection("searches").add(data);
+                                this.db.collection("searches").add({
+                                    address : this.position.label,
+                                    data: data
+                                });
                             }).catch((err) => {
                                 this.isLoading = false;
                                 this.alert = {

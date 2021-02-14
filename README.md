@@ -1,8 +1,8 @@
-# Koala
+# Koala - Naresh Siramsetty
 
 > Koala Weather Widget
 
-> For Demo , Please visit : https://koala-4944d.web.app/
+> For Demo , Please visit : https://brave-almeida-185a0f.netlify.app
 
 ## Build Setup
 
@@ -22,17 +22,18 @@ node server.js & (Will serve files from dist at localhost:8080)
 # run unit tests
 npm run unit
 ```
+
 ## Screenshots - Light
 
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-1.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-2.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-3.png?raw=true)
-![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-mobile-1.png?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-mobile-4.png?raw=true)
 
 ## Screenshots - Dark
 
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-1.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-2.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-3.png?raw=true)
-![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-mobile-1.png?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-mobile-4.png?raw=true)
 

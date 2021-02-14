@@ -14,7 +14,7 @@ let env = process.env.NODE_ENV === "testing"
   : config.build.env;
 let inputBuildNumber = process.env.npm_config_buildno;
 if (!inputBuildNumber) {
-    inputBuildNumber = "1.0.0";
+    inputBuildNumber = "v1";
 }
 env.BUILD_NO = inputBuildNumber;
 
