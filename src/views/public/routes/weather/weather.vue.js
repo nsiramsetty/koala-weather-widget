@@ -40,23 +40,19 @@ export default {
                     lat: parseFloat(position.coords.latitude),
                     lng: parseFloat(position.coords.longitude),
                 };
+                this.$set(this, "position", {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude,
+                    label: "Browser Location",
+                });
+                this.places.push(this.position);
+                this.isLoading = false;
                 // Get Place Details from Geo Code
                 geocoder.geocode({ location: latlng }, (results, status) => {
                     if (status == google.maps.GeocoderStatus.OK) {
-                        this.$set(this, "position", {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude,
-                            label: results[0].formatted_address,
-                        });
-                    } else {
-                        this.$set(this, "position", {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude,
-                            label: "Unknown Location",
-                        });
+                        this.$set(this.position, "label", results[0].formatted_address);
+                        this.$set(this.places[0], "label", results[0].formatted_address);
                     }
-                    this.isLoading = false;
-                    this.places.push(this.position);
                 });
             });
         }
