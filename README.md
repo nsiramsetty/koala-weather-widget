@@ -28,12 +28,14 @@ npm run unit
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-1.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-2.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-3.png?raw=true)
-![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-mobile-4.png?raw=true)
 
 ## Screenshots - Dark
 
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-1.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-2.png?raw=true)
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-3.png?raw=true)
-![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-mobile-4.png?raw=true)
 
+## Screenshots - Mobile
+
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-mobile-4.png?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-mobile-4.png?raw=true)

@@ -10,13 +10,13 @@ export default {
     // Initializing the data
     data: function () {
         return {
-            isDark: false,
+            isDark: true,
             settingsEnabled: false,
             units: "metrics",
             alert: null,
             buildNumber: process.env.BUILD_NO,
             api: new ApiService(),
-            isLoading: false,
+            isLoading: null,
             weatherData: null,
             // Data for testing
             // weatherData: { ...WEATHER_CONFIG.testWeatherData },
@@ -29,7 +29,10 @@ export default {
         };
     },
     created: function () {
+        // Fetch Location from Navigator
         if (navigator.geolocation) {
+            // Watch for User Action
+            setTimeout(this.watchForPermissions,100);
             navigator.geolocation.getCurrentPosition((position) => {
                 this.isLoading = true;
                 var geocoder = new google.maps.Geocoder();
@@ -37,6 +40,7 @@ export default {
                     lat: parseFloat(position.coords.latitude),
                     lng: parseFloat(position.coords.longitude),
                 };
+                // Get Place Details from Geo Code
                 geocoder.geocode({ location: latlng }, (results, status) => {
                     if (status == google.maps.GeocoderStatus.OK) {
                         this.$set(this, "position", {
@@ -58,6 +62,20 @@ export default {
         }
     },
     methods: {
+        watchForPermissions: function(){
+            navigator.permissions.query({
+                name: "geolocation"
+            }).then((result)=> {
+                if (result.state == "granted") {
+                    if(this.isLoading === null && !this.position){
+                        this.isLoading = true;
+                    }
+                } else if (result.state == "prompt") {
+                    setTimeout(this.watchForPermissions,100);
+                }
+            });  
+        },
+        // Load Weather from OpenWeather
         loadWeather: function (position) {
             this.isLoading = true;
             fetch(`https://api.openweathermap.org/data/2.5/onecall?units=metric&lat=${position.lat}&lon=${position.lng}&appid=2926c12fece2510281e36ab190887136`)
@@ -72,7 +90,6 @@ export default {
                             };
                         } else {
                             response.json().then((data) => {
-                                console.log(data);
                                 data.daily.unshift(data.current);
                                 this.$set(this, "weatherData", data);
                                 this.isLoading = false;
