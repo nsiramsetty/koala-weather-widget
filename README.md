@@ -17,7 +17,7 @@ npm run start
 npm run build --buildno=<number | optional | 1.0.0 Default | Provided by Bamboo or Jenkins>
 
 deploy dist/ as static website (or)
-node app.js.js & (Will serve files from dist at localhost:8080)
+node server.js & (Will serve files from dist at localhost:8080)
 
 # run unit tests
 npm run unit
