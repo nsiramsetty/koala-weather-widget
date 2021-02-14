@@ -22,4 +22,17 @@ node server.js & (Will serve files from dist at localhost:8080)
 # run unit tests
 npm run unit
 ```
+## Screenshots - Light
+
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-1?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-2?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-3?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-mobile-1?raw=true)
+
+## Screenshots - Dark
+
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-1?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-2?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-tablet-3?raw=true)
+![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/light-mobile-1?raw=true)
 
