@@ -1,0 +1,46 @@
+@import "variables";
+// Bootstrap
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+// Overrides
+.container {
+  max-width: 100% !important;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.alert {
+  //border-radius: 0;
+}
+
+.alert-heading {
+  margin-top: 0;
+}
+
+.btn, .form-control, .dropdown-menu {
+  //border-radius: 0 !important;
+}
+
+.btn {
+  outline: none !important
+}
+
+.tooltip-inner {
+  //border-radius: 0;
+  font-family: $font-korolev-medium;
+  font-size: $size-75rem;
+  padding: $size-50rem;
+  text-align: center;
+}
+
+kbd {
+  display: inline-block;
+  border: 1px solid $brand-black-custom;
+  padding: 4px;
+  margin: 2px;
+  background-color: $brand-white;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px $brand-white inset;
+  color: $brand-black-custom;
+  font-weight: $weight-700;
+}

@@ -1,0 +1,24 @@
+@import "variables";
+
+footer {
+  margin-top: $size-100rem;
+  background-color: $brand-black-custom;
+  font-size: $size-100rem;
+  font-family: $font-korolev-medium;
+  color: $brand-white;
+  padding: 1px 0;
+}
+
+footer a {
+  color: $brand-white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: $brand-white;
+  text-decoration: none;
+}
+
+footer p {
+  color: $brand-white;
+}

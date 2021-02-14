@@ -1,0 +1,25 @@
+@import "variables";
+
+.btn {
+  //border-radius: 0 !important;
+  padding: $button-padding;
+  border-width: $button-border-width;
+  font-size: $button-font-size;
+  font-family: $button-font-family;
+}
+
+.badge {
+  //border-radius: 0 !important;
+  padding: $button-padding;
+  border-width: $button-border-width;
+  font-size: $button-font-size;
+  font-family: $button-font-family;
+}
+
+.btn-sm {
+  padding: $button-sm-padding !important;
+}
+
+.badge-sm {
+  padding: $button-sm-padding !important;
+}

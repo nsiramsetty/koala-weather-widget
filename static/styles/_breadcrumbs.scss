@@ -1,0 +1,41 @@
+@import "variables";
+
+ol.breadcrumb {
+  font-family: $font-korolev-medium;
+  background-color: transparent;
+  margin: $size-50rem 0 $size-50rem !important;
+  font-size: $size-90rem;
+  padding: 0;
+  display: block !important;
+}
+
+ol.breadcrumb li {
+  padding-left: 0;
+  display: inline-block;
+}
+
+ol.breadcrumb li.active {
+  padding-left: 0;
+  padding-right: $size-50rem;
+  color: $brand-black-custom;
+}
+
+ol.breadcrumb li a {
+  color: $brand-black-custom;
+  font-weight: $weight-700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ol.breadcrumb li a:hover {
+  text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: $size-50rem !important;
+  padding-left: $size-25rem !important;
+  font-family: $font-font-awesome;
+  content: "\f105";
+  color: $brand-black-custom !important;
+}

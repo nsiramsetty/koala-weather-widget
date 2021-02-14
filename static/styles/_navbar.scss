@@ -1,0 +1,123 @@
+@import "variables";
+
+.navbar {
+  padding: 0;
+}
+
+.navbar.navbar-dark {
+  background-color: $brand-black-custom !important
+}
+
+.navbar .container {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.navbar-brand img {
+  height: $size-200rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  text-align: center;
+  margin-left: 0
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0 $size-75rem;
+}
+
+.navbar-toggler-icon {
+  height: $size-200rem;
+}
+
+.navbar-dark li.nav-item {
+  padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $brand-white;
+  padding: $size-25rem 0;
+  border-top: 1px solid $brand-black-custom;
+}
+
+.navbar-dark .nav-item.show .nav-link, .navbar-dark .navbar-nav .nav-link:hover {
+  background-color: $brand-white;
+  color: $brand-black-custom;
+}
+
+/*    ---------------------- MENU ----------------------   */
+
+.menu-large {
+  position: static !important;
+}
+
+.menu-large .dropdown-menu {
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-large .dropdown-menu .container {
+  background-color: $brand-black-custom;
+  padding: $size-75rem;
+}
+
+.menu-large .dropdown-menu .container h5, .menu-user .dropdown-menu h5 {
+  margin-top: 0;
+}
+
+.menu-large .dropdown-menu .container {
+  background-color: $brand-white;
+  color: $brand-black-custom;
+}
+
+.menu-large .dropdown-menu .dropdown-item,
+.menu-user .dropdown-menu .dropdown-item {
+  padding: 0 0 $size-50rem 0;
+}
+
+.menu-large .dropdown-menu .dropdown-item:hover,
+.menu-user .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+  color: $brand-black-custom;
+}
+
+.menu-large .dropdown-menu img.img-fluid {
+  display: none;
+}
+
+.menu-large .dropdown-menu .caption {
+  margin-bottom: 6pt;
+  display: block;
+}
+
+.menu-large .dropdown-menu .caption a, .menu-user .dropdown-menu a {
+  white-space: nowrap;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.menu-user .dropdown-menu {
+  margin-top: 0;
+  border: none;
+  background-color: $brand-white;
+  padding: $size-75rem;
+  min-width: 300px;
+}
+
+.menu-user .dropdown-menu p {
+  margin-bottom: $size-50rem;
+}
+
+.menu-user .dropdown-menu .form-control {
+  max-width: 72%;
+}

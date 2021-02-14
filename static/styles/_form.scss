@@ -1,0 +1,64 @@
+@import "variables";
+// Overrides
+
+.form-control {
+  font-size: $size-90rem !important;
+  background: $brand-light-gray
+}
+
+.form-control:focus {
+  background: $brand-light-gray
+}
+
+.form-inline-error {
+  font-family: $font-korolev-medium;
+  font-size: $size-75rem;
+  padding: $size-50rem $size-75rem;
+  margin-bottom: 0;
+}
+
+.form-inline-warning {
+  font-family: $font-korolev-medium;
+  font-size: $size-75rem;
+  padding: $size-50rem $size-75rem;
+  margin-bottom: $size-50rem;
+}
+
+label {
+  font-family: $font-korolev-medium;
+  margin-bottom: $size-25rem;
+}
+
+label.required:after {
+  color: $brand-danger;
+  content: ' *';
+  display: inline;
+}
+
+.form-group {
+  margin-bottom: $size-25rem;
+}
+
+.mandatory {
+  color: $brand-danger
+}
+
+.full-width {
+  margin-top: $size-50rem;
+  margin-bottom: $size-50rem;
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .fixed-width {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fixed-width {
+    width: 80%;
+    text-align: left;
+  }
+}

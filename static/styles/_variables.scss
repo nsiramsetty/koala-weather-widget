@@ -1,0 +1,90 @@
+//Font Sizes and Padding
+$size-25rem: 0.25rem;
+$size-50rem: 0.50rem;
+$size-75rem: 0.75rem;
+$size-90rem: 0.75rem;
+$size-100rem: 1rem;
+$size-125rem: 1.25rem;
+$size-150rem: 1.50rem;
+$size-175rem: 1.75rem;
+$size-200rem: 2rem;
+$weight-700: 700;
+
+
+// Font Family
+
+$font-korolev-medium: 'Korolev-Medium', sans-serif;
+$font-korolev-light: 'Korolev-Light', sans-serif;
+$font-korolev-bold: 'Korolev-Bold', sans-serif;
+$font-font-awesome: 'FontAwesome', sans-serif;
+
+
+// Buttons
+
+$button-border-width: 1px;
+$button-padding: 0.75rem 1rem;
+$button-font-size: 1rem;
+$button-font-family: $font-korolev-medium;
+$button-sm-padding: 6px 0.50rem;
+$button-md-padding: 0.50rem 0.50rem;
+
+// Colors
+
+$brand-blue: #007bff;
+$brand-black: #000000;
+$brand-black-custom: #373737;
+$brand-indigo: #6610f2;
+$brand-purple: #6f42c1;
+$brand-pink: #e83e8c;
+$brand-red: #dc3545;
+$brand-orange: #fd7e14;
+$brand-yellow: #ffc107;
+$brand-green: #28a745;
+$brand-teal: #20c997;
+$brand-cyan: #17a2b8;
+$brand-white: #fff;
+$brand-gray: #6c757d;
+$brand-light-gray: #e7e7e8;
+$brand-gray-dark: #343a40;
+$brand-primary: #007bff;
+$brand-secondary: #6c757d;
+$brand-success: #28a745;
+$brand-info: #17a2b8;
+$brand-warning: #ffc107;
+$brand-danger: #dc3545;
+$brand-light: #f8f9fa;
+$brand-dark: #343a40;
+
+// Break Points
+
+$brand-breakpoint-xs: 0;
+$brand-breakpoint-sm: 576px;
+$brand-breakpoint-md: 768px;
+$brand-breakpoint-lg: 992px;
+$brand-breakpoint-xl: 1200px;
+
+// Buttons
+
+$btn-default-color: #333 !default;
+$btn-default-bg: $brand-white !default;
+$btn-default-border: #ccc !default;
+
+$btn-primary-color: $brand-white !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color: $brand-white !default;
+$btn-success-bg: $brand-success !default;
+$btn-success-border: darken($btn-success-bg, 5%) !default;
+
+$btn-info-color: $brand-white !default;
+$btn-info-bg: $brand-info !default;
+$btn-info-border: darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color: $brand-white !default;
+$btn-warning-bg: $brand-warning !default;
+$btn-warning-border: darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color: $brand-white !default;
+$btn-danger-bg: $brand-danger !default;
+$btn-danger-border: darken($btn-danger-bg, 5%) !default;

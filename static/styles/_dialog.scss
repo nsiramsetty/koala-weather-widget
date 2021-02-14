@@ -1,0 +1,85 @@
+@import "variables";
+// Overrides
+$dialog-z-index: 1040;
+
+.dg-container {
+  z-index: $dialog-z-index;
+}
+
+.dg-backdrop {
+  z-index: $dialog-z-index;
+}
+
+.dg-btn {
+  padding: $button-padding;
+  border-width: $button-border-width;
+  font-size: $button-font-size;
+  font-family: $button-font-family;
+}
+
+.dg-btn--ok {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-color !important;
+  border-color: $btn-primary-bg;
+  //border-radius: 0 !important;
+}
+
+.dg-btn--ok:hover {
+  background-color: $btn-primary-border;
+  color: $btn-primary-color !important;
+}
+
+.dg-btn--cancel {
+  background-color: $btn-danger-bg;
+  color: $btn-danger-color !important;
+  border-color: $btn-danger-bg;
+  //border-radius: 0 !important;
+}
+
+.dg-btn--cancel:hover {
+  background-color: $btn-danger-border;
+  color: $btn-danger-color !important;
+}
+
+.dg-main-content {
+  width: 80%;
+  min-width: 80%;
+  overflow: auto;
+  //border-radius: 0;
+  padding: 0;
+  margin: 3% auto;
+  background: transparent;
+}
+
+.dg-content-cont--floating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: none;
+  transform: none;
+  margin-top: 0;
+}
+
+.dg-view-wrapper {
+  max-height: 570px;
+  overflow-x: hidden;
+}
+
+.dg-view-wrapper-small {
+  max-width: 576px;
+  margin: auto;
+}
+
+.dg-view-wrapper-medium {
+  max-width: 992px;
+  margin: auto;
+}
+
+.dg-content-inner-container {
+  max-height: 420px;
+  overflow-x: hidden;
+}
+
+.dg-content-header {
+  border-bottom: 2px solid $brand-light;
+}

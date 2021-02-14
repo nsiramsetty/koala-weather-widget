@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "variables";
+
+@font-face {
+  font-family: 'Korolev-Bold';
+  src: url('../../static/fonts/322179_4_0.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Korolev-Light';
+  src: url('../../static/fonts/322179_6_0.woff2') format('woff2') ;
+}
+
+@font-face {
+  font-family: 'Korolev-Medium';
+  src: url('../../static/fonts/322179_7_0.woff2') format('woff2');
+}
+
+body {
+  font-family: $font-korolev-light;
+  font-size: $size-90rem;
+  color: $brand-black-custom;
+}
+
+a {
+  outline: none !important
+}
+
+h3 {
+  font-family: $font-korolev-medium;
+  font-size: $size-100rem;
+  line-height: $size-100rem;
+}
+
+pre {
+  font-family: $font-korolev-light;
+}
+
+h4 {
+  font-family: $font-korolev-medium;
+  font-size: $size-75rem;
+  line-height: $size-75rem;
+  margin-bottom: 0;
+}
+
+strong{
+  font-size: $size-90rem;
+}
+
+h5 {
+  font-family: $font-korolev-light;
+  font-size: $size-100rem;
+  line-height: $size-125rem;
+  margin-top: $size-50rem;
+  margin-bottom: $size-50rem;
+}
+
+h6 {
+  font-family: $font-korolev-light;
+  font-size: $size-90rem;
+  line-height: $size-125rem;
+  margin-top: $size-50rem;
+  margin-bottom: $size-50rem;
+}
+
+ul {
+  margin-left: $size-100rem;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: square;
+}
+
+ol {
+  margin-left: $size-100rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+ul ul, ol ol {
+  margin-bottom: 0
+}
+
+sup {
+  font-family: $font-korolev-medium;
+  font-weight: $weight-700;
+}
+
+ul li, ol li {
+  margin-left: 0;
+  padding-left: $size-75rem;
+  font-family: $font-korolev-medium;
+}
+
+hr {
+  margin-top: $size-50rem;
+  margin-bottom: $size-50rem;
+}

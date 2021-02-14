@@ -1,0 +1,102 @@
+@import "variables";
+
+.accordion .card .card-header:after {
+  font-family: $font-font-awesome;
+  content: "\F146";
+  position: absolute;
+  right: $size-125rem;
+}
+
+.accordion .card .card-header.collapsed:after {
+  font-family: $font-font-awesome;
+  content: "\F0FE";
+  position: absolute;
+  right: $size-125rem;
+}
+
+.accordion .card .card-header, .accordion .card .card-header.collapsed:hover {
+  color: $brand-white;
+  border: none;
+  font-size: $size-100rem;
+  text-decoration: none;
+  background-color: $brand-gray;
+  //border-radius: 0;
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.accordion .card .card-header.collapsed {
+  background-color: $brand-light-gray;
+  color: $brand-gray-dark;
+}
+
+.card {
+  border: none;
+  border-radius: 5px;
+}
+
+.card .card-header .pull-right {
+  position: absolute;
+  right: $size-125rem;
+  cursor: pointer;
+}
+
+.card .card-header {
+  font-family: $font-korolev-medium;
+  font-size: $size-100rem;
+  padding: $size-25rem $size-50rem;
+  //border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card a {
+  color: inherit;
+}
+
+.card .card-header .nav-link {
+  //min-width: 16vh;
+}
+
+.pull-right {
+  i {
+    margin-left: $size-50rem;
+  }
+}
+
+.pull-left {
+  i {
+    margin-right: $size-50rem;
+  }
+}
+
+.card.card-light-grey {
+  .card-header {
+    color: $brand-gray-dark;
+    background-color: $brand-light-gray;
+  }
+}
+
+.card.card-dark-grey {
+  .card-header {
+    color: $brand-white;
+    background-color: $brand-gray;
+  }
+}
+
+.card .card-footer {
+  font-family: $font-korolev-medium;
+  font-size: $size-100rem;
+  padding: $size-75rem $size-75rem;
+  color: $brand-gray-dark;
+  background-color: $brand-light;
+}
+
+.card .card-header.card-dark-grey {
+  color: $brand-white;
+  background-color: $brand-gray;
+}
+
+.card .card-header.card-light-grey {
+  color: $brand-gray-dark;
+  background-color: $brand-light-gray;
+}

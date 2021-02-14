@@ -1,0 +1,26 @@
+@import "variables";
+@import "~vue-select/src/scss/vue-select.scss";
+.v-select {
+  font-size: $size-90rem !important;
+}
+
+.v-select .dropdown-toggle {
+  padding: 0;
+  //border-radius: 0;
+}
+
+.v-select input[type=search], .v-select input[type=search]:focus {
+  margin: -2px 2px 0;
+}
+
+.v-select .selected-tag {
+  margin: 0;
+  padding: 0 $size-75rem;
+  border: none;
+}
+
+.vs__search, .vs__search:focus{
+  line-height: 2em;
+  font-size: 1em;
+  padding-top: 3px;
+}

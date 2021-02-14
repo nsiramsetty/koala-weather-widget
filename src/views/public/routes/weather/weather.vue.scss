@@ -1,0 +1,74 @@
+@import '../../../../../static/styles/variables';
+
+.weather {
+
+    .left{
+    padding-top: 15%;
+    float: left; 
+   }
+   
+    .right{
+    padding-top: 15%;
+    float: right; 
+    }
+
+    .dark .vs__selected {
+        color: $brand-white;
+      }
+    
+     .dark .vs__dropdown-toggle{
+         border-color: $brand-white;
+     }
+     
+     .dark .vs__spinner{
+         border-top: 0.9em solid $brand-white;
+         border-bottom: 0.9em solid $brand-white;
+         border-right: 0.9em solid $brand-white;
+         border-left: 0.9em solid $brand-light-gray;
+     }
+     
+    .dark input{
+        color: $brand-white;
+    }
+    
+    .dark hr{
+        background-color: $brand-white;
+    }
+
+    .dark .alert{
+        color: $brand-white;
+        background-color: $brand-black;
+    }
+
+    .card .card-body {
+        border-right: 1px solid $brand-light-gray;
+        border-left: 1px solid $brand-light-gray;
+        border-bottom: 1px solid $brand-light-gray;
+        padding: $size-50rem $size-50rem;
+      }
+      
+      .card .card-body.dark {
+        border-right: 1px solid $brand-gray-dark;
+        border-left: 1px solid $brand-gray-dark;
+        border-bottom: 1px solid $brand-gray-dark;
+        padding: $size-75rem $size-75rem;
+        background-color: $brand-gray-dark;
+        color: $brand-white;
+      }
+      
+      .card .card-header.dark {
+        color: $brand-white;
+        background-color: $brand-black;
+      }
+      
+      .btn-default.dark{
+        color: $brand-white;
+        background-color: $brand-black;
+      }
+      
+      .dark {
+        color: brand-white;
+      }
+      
+}
+

@@ -1,0 +1,15 @@
+<section class="not-found">
+    <div class="row">
+    </div>
+    <div class="row" v-if="alert">
+        <div class="col-12">
+            <div class="alert alert-dismissible fade show" :class="alert.class" role="alert">
+                <h4 class="alert-heading">
+                    <i class="fa"
+                       v-bind:class="alert.class === 'alert-danger' ? 'fa-exclamation-circle' : (alert.class === 'alert-success' ? 'fa-check' : 'fa-info-circle') "></i>&nbsp;{{alert.heading}}
+                </h4>
+                <span v-html="alert.text"></span>
+            </div>
+        </div>
+    </div>
+</section>

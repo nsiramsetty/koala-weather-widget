@@ -1,0 +1,10 @@
+@import "variables";
+
+.sortable-ghost {
+  padding: $size-50rem;
+  border: 2px dashed $brand-light-gray;
+}
+
+.sortable-element {
+  cursor: move;
+}
