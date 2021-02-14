@@ -23,6 +23,30 @@ node server.js & (Will serve files from dist at localhost:8080)
 npm run unit
 ```
 
+## Overview
+
+```
+This is a simple weather widget deveoped using Vue JS. 
+
+This application uses OpenWeather, Googgle GeoCoding, Places API to get the data navigator.geolocation to get data related to weather, location, browser settings etc.
+
+On load, this will check & prompt accordingly for permissions. If permissions were blocked , then you will have a screen to select location. If the access is "Ask", Then you will get a prompt for the same and once you allow, it will automatically load the weather for current location.
+Note: There seems to  be little bit delay in fetching geocoding & weather for the first time, please give it 2-3 sec to load.
+
+At any point, yo can change the location using settings button on bottom right.
+
+You can navigate between the dates using the arrows in top right.
+
+You can also enable/disable dark mode using the light symbol available on top bar.
+
+I have spent ~6 hrs on the same and would like to concentrate on the below if I could get to spend more time on this.
+
+1. Test Cases
+2. Animations
+3. UI Color/ Weather Images improvements.
+
+```
+
 ## Screenshots - Light
 
 ![alt text](https://github.com/nsiramsetty/koala-weather-widget/blob/main/screenshots/dark-tablet-1.png?raw=true)
