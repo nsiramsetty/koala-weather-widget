@@ -65,11 +65,17 @@ export default {
                 if (result.state == "granted") {
                     if(this.isLoading === null && !this.position){
                         this.isLoading = true;
+                        setTimeout(this.disableLoading,10000);
                     }
                 } else if (result.state == "prompt") {
                     setTimeout(this.watchForPermissions,100);
                 }
             });  
+        },
+        disableLoading: function(){
+            if(this.isLoading === true && !this.position){
+                this.isLoading = false;
+            }
         },
         // Load Weather from OpenWeather
         loadWeather: function (position) {
